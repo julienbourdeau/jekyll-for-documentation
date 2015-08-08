@@ -24,9 +24,6 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
 
 
 // Using media queries with like this:
@@ -46,7 +43,43 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+    "foundation/scss/normalize.scss",
+    "foundation/scss/foundation/components/grid",
+    "foundation/scss/foundation/components/accordion",
+    "foundation/scss/foundation/components/alert-boxes",
+    "foundation/scss/foundation/components/block-grid",
+    "foundation/scss/foundation/components/breadcrumbs",
+    "foundation/scss/foundation/components/button-groups",
+    "foundation/scss/foundation/components/buttons",
+    "foundation/scss/foundation/components/clearing",
+    "foundation/scss/foundation/components/dropdown",
+    "foundation/scss/foundation/components/dropdown-buttons",
+    "foundation/scss/foundation/components/flex-video",
+    "foundation/scss/foundation/components/forms",
+    "foundation/scss/foundation/components/icon-bar",
+    "foundation/scss/foundation/components/inline-lists",
+    "foundation/scss/foundation/components/joyride",
+    "foundation/scss/foundation/components/keystrokes",
+    "foundation/scss/foundation/components/labels",
+    "foundation/scss/foundation/components/magellan",
+    "foundation/scss/foundation/components/orbit",
+    "foundation/scss/foundation/components/pagination",
+    "foundation/scss/foundation/components/panels",
+    "foundation/scss/foundation/components/pricing-tables",
+    "foundation/scss/foundation/components/progress-bars",
+    "foundation/scss/foundation/components/range-slider",
+    "foundation/scss/foundation/components/reveal",
+    "foundation/scss/foundation/components/side-nav",
+    "foundation/scss/foundation/components/split-buttons",
+    "foundation/scss/foundation/components/sub-nav",
+    "foundation/scss/foundation/components/switches",
+    "foundation/scss/foundation/components/tables",
+    "foundation/scss/foundation/components/tabs",
+    "foundation/scss/foundation/components/thumbs",
+    "foundation/scss/foundation/components/tooltips",
+    "foundation/scss/foundation/components/top-bar",
+    "foundation/scss/foundation/components/type",
+    "foundation/scss/foundation/components/offcanvas",
+    "foundation/scss/foundation/components/visibility",
+    "syntax-highlighting"
 ;
