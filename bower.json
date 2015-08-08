@@ -1,0 +1,8 @@
+{
+  "name": "jekyll-for-tech-doc",
+  "version": "0.1.0",
+  "dependencies": {
+    "foundation": "~5.5.2"
+  },
+  "devDependencies": {}
+}
