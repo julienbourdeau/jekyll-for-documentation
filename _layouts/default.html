@@ -15,6 +15,14 @@
 
     {% include footer.html %}
 
+    <script src="{{ '/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/bower_components/fastclick/lib/fastclick.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/bower_components/foundation/js/foundation/foundation.js' | prepend: site.baseurl }}"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
   </body>
 
 </html>
