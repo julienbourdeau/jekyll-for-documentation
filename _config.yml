@@ -1,0 +1,12 @@
+# Site settings
+title: Your documentation title
+email: doc-team@yourdomain.com
+description: > # this template is made for documentation.
+    If you work in IT, you must write documentation but you
+    probably hate Confluence and random wiki software.
+    We want git. we want markdown. We don't want no weird shit.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://doc.yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
