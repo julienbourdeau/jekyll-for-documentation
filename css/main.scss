@@ -44,6 +44,9 @@ $content-width:    800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
     "foundation/scss/normalize.scss",
+    "foundation/scss/foundation/_functions",
+    "global",
+
     "foundation/scss/foundation/components/grid",
     "foundation/scss/foundation/components/accordion",
     "foundation/scss/foundation/components/alert-boxes",
