@@ -5,19 +5,31 @@
 
   <body>
 
-    {% include header.html %}
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+        {% include header.html %}
+
+        <section role="main" class="scroll-container">
+          <div class="row">
+
+            {% include sidebar.html %}
+            {% include content.html %}
+
+          </div>
+        </section>
+
+        {% include footer.html %}
+
       </div>
     </div>
 
-    {% include footer.html %}
+
 
     <script src="{{ '/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/bower_components/fastclick/lib/fastclick.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/bower_components/foundation/js/foundation/foundation.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/bower_components/foundation/js/foundation/foundation.offcanvas.js' | prepend: site.baseurl }}"></script>
 
     <script>
       $(document).foundation();

@@ -1,12 +1,9 @@
-<div class="sticky">
-
-<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [large,medium], is_hover: false">
+<!-- Navbar for medium and large screens -->
+<nav class="top-bar hide-for-small" data-topbar role="navigation" data-options="sticky_on: [large,medium], is_hover: false">
   <ul class="title-area">
     <li class="name">
       <h1><a href="#">{{ site.title }}</a></h1>
     </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
 
   <section class="top-bar-section">
@@ -31,4 +28,17 @@
   </section>
 </nav>
 
-</div>
+<!-- Navbar for small screens -->
+<nav class="tab-bar show-for-small">
+  <a role="button"  class="left-off-canvas-toggle menu-icon" aria-expanded="false">
+    <span>Menu</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+    <li><label class="first">Foundation</label></li>
+    <li><a href="http://foundation.zurb.com">Home</a></li>
+  </ul>
+</aside>
+<a class="exit-off-canvas"></a>
