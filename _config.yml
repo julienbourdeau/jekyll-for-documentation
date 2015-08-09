@@ -1,20 +1,21 @@
 # Site settings
-title: Your documentation title
-email: doc-team@yourdomain.com
+title: Jekyll for documentation
+email: julien@sigerr.org
+
 description: > # this template is made for documentation.
     If you work in IT, you must write documentation but you
     probably hate Confluence and random wiki software.
     We want git. we want markdown. We don't want no weird shit.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://doc.yourdomain.com" # the base hostname & protocol for your site
+
+baseurl: "/jekyll-for-documentation" # the subpath of your site, e.g. /blog/
+url: "http://julienbourdeau.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 
-exclude: ["bower.json", "Gemfile", "Gemfile.lock"]
+exclude: ["bower.json", "bower_components", "Gemfile", "Gemfile.lock"]
 
 sass:
     load_paths:
         - _sass
-        - bower_components
     style: compressed
