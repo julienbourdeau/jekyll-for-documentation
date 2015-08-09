@@ -17,7 +17,7 @@ module Jekyll
 Syntax error in tag 'alert' while parsing the following markup:
   #{@markup}
 Valid syntax:
-  opening: {% box default|success|warning|info|alert|secondary|note %}
+  opening: {% box success|warning|info|alert|large|small %}
   closing: {% endbox %}
 eos
       end
