@@ -1,0 +1,135 @@
+---
+layout: post
+title:  "Boxes"
+date:   2015-08-09 00:26:59
+---
+
+You can use the following boxes to emphasis your content. This theme has a Liquid
+tag `box` to easily generate a box.
+
+{% highlight liquid %}
+{% raw %}
+{% box success %}
+
+## Box title
+
+The best part is that you can use **Markdown** within the _boxes_.
+
+{% endbox %}
+{% endraw %}
+{% endhighlight %}
+
+Remember that **plugins are not allowed on GitHub Pages**, you will have to use the following
+HTML markup in your markdown file.
+
+{% highlight html %}
+<div class="alert-box success">
+## Box title
+
+The best part is that you can use **Markdown** within the _boxes_.
+</div>
+{% endhighlight %}
+
+
+### Examples
+
+{% box success %}
+#### success
+
+The best part is that you can use **Markdown** within the _boxes_.
+{% endbox %}
+
+{% box warning %}
+#### warning
+
+The best part is that you can use **Markdown** within the _boxes_.
+{% endbox %}
+
+{% box info %}
+#### info
+
+The best part is that you can use **Markdown** within the _boxes_.
+{% endbox %}
+
+{% box alert %}
+#### alert
+
+The best part is that you can use **Markdown** within the _boxes_.
+{% endbox %}
+
+{% box large %}
+#### large
+
+The best part is that you can use **Markdown** within the _boxes_.
+{% endbox %}
+
+{% box small %}
+#### small
+
+The best part is that you can use **Markdown** within the _boxes_.
+{% endbox %}
+
+
+
+### Customize the boxes
+
+All the boxes and based on _Fondation alerts_, you will find there style in `custom.scss`.
+
+{% highlight sass %}
+.alert-box {
+  background: #f7f7f7;
+  color: #333;
+  border: none;
+  border-left: 6px solid #008CBA;
+  box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+
+  &.success {
+    background: #f7f7f7;
+    color: #333;
+  }
+
+  &.alert {
+    background: #f7f7f7;
+    color: #333;
+  }
+
+  &.warning {
+    background: #f7f7f7;
+    color: #333;
+  }
+
+  &.info {
+    background: #f7f7f7;
+    color: #333;
+  }
+
+  &.small {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.75rem;
+
+    .close {
+      font-size: 1.5rem;
+    }
+  }
+
+  &.large {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+
+    .close {
+      font-size: 3rem;
+    }
+  }
+
+  .close {
+    font-size: 2rem;
+    line-height: 1.25rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+{% endhighlight %}

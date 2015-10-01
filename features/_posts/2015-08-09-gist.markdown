@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Embeded Gist"
+date:   2015-08-09 00:26:59
+---
+
+
+I'm hoping this will work.
+
+{% gist julienbourdeau/47cbd09d1a73bd6c4546 %}
+
