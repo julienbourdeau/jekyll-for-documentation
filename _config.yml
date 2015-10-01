@@ -7,7 +7,7 @@ description: > # this template is made for documentation.
     probably hate Confluence and random wiki software.
     We want git. we want markdown. We don't want no weird shit.
 
-baseurl: "/jekyll-for-documentation" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://julienbourdeau.github.io" # the base hostname & protocol for your site
 
 # Build settings
