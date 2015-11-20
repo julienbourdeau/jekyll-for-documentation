@@ -4,23 +4,7 @@ title:  "Boxes"
 date:   2015-08-09 00:26:59
 ---
 
-You can use the following boxes to emphasis your content. This theme has a Liquid
-tag `box` to easily generate a box.
-
-{% highlight liquid %}
-{% raw %}
-{% box success %}
-
-## Box title
-
-The best part is that you can use **Markdown** within the _boxes_.
-
-{% endbox %}
-{% endraw %}
-{% endhighlight %}
-
-Remember that **plugins are not allowed on GitHub Pages**, you will have to use the following
-HTML markup in your markdown file.
+Create a box for alert info.
 
 {% highlight html %}
 <div class="alert-box success">
@@ -33,41 +17,41 @@ The best part is that you can use **Markdown** within the _boxes_.
 
 ### Examples
 
-{% box success %}
+<div class="alert-box success" markdown="1">
 #### success
 
 The best part is that you can use **Markdown** within the _boxes_.
-{% endbox %}
+</div>
 
-{% box warning %}
+<div class="alert-box warning" markdown="1">
 #### warning
 
 The best part is that you can use **Markdown** within the _boxes_.
-{% endbox %}
+</div>
 
-{% box info %}
+<div class="alert-box info" markdown="1">
 #### info
 
 The best part is that you can use **Markdown** within the _boxes_.
-{% endbox %}
+</div>
 
-{% box alert %}
+<div class="alert-box alert" markdown="1">
 #### alert
 
 The best part is that you can use **Markdown** within the _boxes_.
-{% endbox %}
+</div>
 
-{% box large %}
+<div class="alert-box large" markdown="1">
 #### large
 
 The best part is that you can use **Markdown** within the _boxes_.
-{% endbox %}
+</div>
 
-{% box small %}
+<div class="alert-box small" markdown="1">
 #### small
 
 The best part is that you can use **Markdown** within the _boxes_.
-{% endbox %}
+</div>
 
 
 
