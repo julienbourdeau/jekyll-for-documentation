@@ -1,0 +1,23 @@
+{
+  "name": "jekyll-for-documentation",
+  "version": "0.1.0",
+  "description": "A jekyll template for extensive documentation",
+  "main": "index.html",
+  "dependencies": {
+    "foundation-sites": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julienbourdeau/jekyll-for-documentation.git"
+  },
+  "author": "Julien Bourdeau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julienbourdeau/jekyll-for-documentation/issues"
+  },
+  "homepage": "https://github.com/julienbourdeau/jekyll-for-documentation#readme"
+}
