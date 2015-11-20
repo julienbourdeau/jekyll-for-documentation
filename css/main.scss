@@ -6,66 +6,52 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
 $spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-    "foundation/normalize.scss",
-    "foundation/foundation/_functions",
-    "global",
+// Foundation
+@import "foundation/foundation";
 
-    "foundation/foundation/components/grid",
-    "foundation/foundation/components/accordion",
-    "foundation/foundation/components/alert-boxes",
-    "foundation/foundation/components/block-grid",
-    "foundation/foundation/components/breadcrumbs",
-    "foundation/foundation/components/button-groups",
-    "foundation/foundation/components/buttons",
-    "foundation/foundation/components/clearing",
-    "foundation/foundation/components/dropdown",
-    "foundation/foundation/components/dropdown-buttons",
-    "foundation/foundation/components/flex-video",
-    "foundation/foundation/components/forms",
-    "foundation/foundation/components/icon-bar",
-    "foundation/foundation/components/inline-lists",
-    "foundation/foundation/components/joyride",
-    "foundation/foundation/components/keystrokes",
-    "foundation/foundation/components/labels",
-    "foundation/foundation/components/magellan",
-    "foundation/foundation/components/orbit",
-    "foundation/foundation/components/pagination",
-    "foundation/foundation/components/panels",
-    "foundation/foundation/components/pricing-tables",
-    "foundation/foundation/components/progress-bars",
-    "foundation/foundation/components/range-slider",
-    "foundation/foundation/components/reveal",
-    "foundation/foundation/components/side-nav",
-    "foundation/foundation/components/split-buttons",
-    "foundation/foundation/components/sub-nav",
-    "foundation/foundation/components/switches",
-    "foundation/foundation/components/tables",
-    "foundation/foundation/components/tabs",
-    "foundation/foundation/components/thumbs",
-    "foundation/foundation/components/tooltips",
-    "foundation/foundation/components/top-bar",
-    "foundation/foundation/components/type",
-    "foundation/foundation/components/offcanvas",
-    "foundation/foundation/components/visibility",
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+
+
+@import
     "syntax-highlighting",
     "base",
     "custom"
