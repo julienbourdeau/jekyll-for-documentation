@@ -1,11 +1,13 @@
-{% for category in site.categories %}
+{% assign sorted_categories = site.categories | sort: name %}
+
+{% for category in sorted_categories %}
   {% assign cat = category[0] %}
 
   {% if site.categories[cat] %}
 
     <li class="heading">{{ cat }}</li>
-
-    {% for post in site.categories[cat] %}
+    {% assign sorted_post = site.categories[cat] | sort: order %}
+    {% for post in sorted_post %}
       <li><a href="{{ post.url  | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
 
